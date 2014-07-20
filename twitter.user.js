@@ -13,7 +13,7 @@
 // ==/UserScript==
 
 /* Allows for CSS editing */
-function addGlobalStyle(css) {
+function addCSS(css) {
     var head, style;
     head = document.getElementsByTagName('head')[0];
     if (!head) { return; }
@@ -24,49 +24,50 @@ function addGlobalStyle(css) {
 }
 
 /* Everywhere */
-addGlobalStyle('.topics { display:none !important; }');
-addGlobalStyle('.Icon.Icon--bird.bird-topbar-etched { display:none !important; }')
-addGlobalStyle('.topbar-tweet-btn { display:none !important; }')
-addGlobalStyle('.header-inner { display:none !important; }')
-addGlobalStyle('.text { display:none !important; }')
-addGlobalStyle('.js-nav-links { display:none !important; }')
-addGlobalStyle('.Icon.Icon--search.nav-search { display:none !important; }')
-addGlobalStyle('.dropdown-caret { display:none !important; }')
+addCSS('.topics { display:none !important; }');
+addCSS('.Icon.Icon--bird.bird-topbar-etched { display:none !important; }')
+addCSS('.topbar-tweet-btn { display:none !important; }')
+addCSS('.header-inner { display:none !important; }')
+addCSS('.text { display:none !important; }')
+addCSS('.js-nav-links { display:none !important; }')
+addCSS('.Icon.Icon--search.nav-search { display:none !important; }')
+addCSS('.dropdown-caret { display:none !important; }')
+addCSS('.modal-btn.modal-close.js-close { display:none !important }')
 
 /* Home page */
-addGlobalStyle('.dashboard.dashboard-right { display:none !important; }');
-addGlobalStyle('.module.trends { display:none !important; }');
-addGlobalStyle('.module.roaming-module.wtf-module.js-wtf-module .has-content { display:none !important; }')
-addGlobalStyle('.Footer.module.roaming-module { display:none !important; }')
-addGlobalStyle('.geo-picker { display:none !important; }')
+addCSS('.dashboard.dashboard-right { display:none !important; }');
+addCSS('.module.trends { display:none !important; }');
+addCSS('.module.roaming-module.wtf-module.js-wtf-module .has-content { display:none !important; }')
+addCSS('.Footer.module.roaming-module { display:none !important; }')
+addCSS('.geo-picker { display:none !important; }')
 
 /* Profile page */
-addGlobalStyle('.ProfileWTFAndTrends { display:none !important; }');
-addGlobalStyle('.ProfileTweetbox { display:none !important; }')
-addGlobalStyle('.ProfileAvatar { height:150px !important; width:150px !important; }')
-addGlobalStyle('.ProfileCanopy-header { height:200px !important; }')
-addGlobalStyle('.ProfileCanopy--large { height:200px !important; }')
-addGlobalStyle('.ProfileNav-item.ProfileNav-item--userActions.u-pullRight.u-textRight.with-rightCaret { display:none !important; }')
-addGlobalStyle('.PhotoRail-mediaBox { display:none !important }')
+addCSS('.ProfileWTFAndTrends { display:none !important; }');
+addCSS('.ProfileTweetbox { display:none !important; }')
+addCSS('.ProfileAvatar { height:150px !important; width:150px !important; }')
+addCSS('.ProfileCanopy-header { height:200px !important; }')
+addCSS('.ProfileCanopy--large { height:200px !important; }')
+addCSS('.ProfileNav-item.ProfileNav-item--userActions.u-pullRight.u-textRight.with-rightCaret { display:none !important; }')
+addCSS('.PhotoRail-mediaBox { display:none !important }')
 
 /* Tweets */
-addGlobalStyle('.details.with-icn.js-details { display:none !important; }')
-addGlobalStyle('.action-reply-container { display:none !important; }')
-addGlobalStyle('.with-icn.retweet.js-tooltip b { display:none !important; }')
-addGlobalStyle('.with-icn.undo-retweet.js-tooltip b { display:none !important; }')
-addGlobalStyle('.with-icn.favorite.js-tooltip b { display:none !important; }')
-addGlobalStyle('.with-icn.unfavorite.js-tooltip b { display:none !important; }')
-addGlobalStyle('.translate-label { display:none !important; }')
-addGlobalStyle('.with-icn.js-action-del.js-tooltip b { display:none !important; }')
-addGlobalStyle('.with-icn.dropdown-toggle.js-tooltip b { display:none !important; }')
-addGlobalStyle('.metadata { display:none !important; }')
-addGlobalStyle('.translation-attribution { display:none !important; }')
-// addGlobalStyle('.btn-link.js-translate-tweet.translate-button { display:none !important; }')
-addGlobalStyle('.CardAttribution { display:none !important; }')
-addGlobalStyle('.media-preview-container { display:none !important; }')
+addCSS('.details.with-icn.js-details { display:none !important; }')
+addCSS('.action-reply-container { display:none !important; }')
+addCSS('.with-icn.retweet.js-tooltip b { display:none !important; }')
+addCSS('.with-icn.undo-retweet.js-tooltip b { display:none !important; }')
+addCSS('.with-icn.favorite.js-tooltip b { display:none !important; }')
+addCSS('.with-icn.unfavorite.js-tooltip b { display:none !important; }')
+addCSS('.translate-label { display:none !important; }')
+addCSS('.with-icn.js-action-del.js-tooltip b { display:none !important; }')
+addCSS('.with-icn.dropdown-toggle.js-tooltip b { display:none !important; }')
+addCSS('.metadata { display:none !important; }')
+addCSS('.translation-attribution { display:none !important; }')
+// addCSS('.btn-link.js-translate-tweet.translate-button { display:none !important; }')
+addCSS('.CardAttribution { display:none !important; }')
+addCSS('.media-preview-container { display:none !important; }')
 
 /* Popups */
-addGlobalStyle('.twttr-dialog-footer { display:none !important; }')
-addGlobalStyle('.go-to-profile { display:none !important; }')
-addGlobalStyle('.modal-title { display:none !important; }')
-addGlobalStyle('.profile-header-inner.flex-module.clearfix { height:80px !important}')
+addCSS('.twttr-dialog-footer { display:none !important; }')
+addCSS('.go-to-profile { display:none !important; }')
+addCSS('.modal-title { display:none !important; }')
+addCSS('.profile-header-inner.flex-module.clearfix { height:80px !important}')
