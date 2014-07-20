@@ -33,6 +33,7 @@ addCSS('.js-nav-links { display:none !important; }')
 addCSS('.Icon.Icon--search.nav-search { display:none !important; }')
 addCSS('.dropdown-caret { display:none !important; }')
 addCSS('.modal-btn.modal-close.js-close { display:none !important }')
+addCSS('.dropdown { display:none !important }')
 
 /* Home page */
 addCSS('.dashboard.dashboard-right { display:none !important; }');
