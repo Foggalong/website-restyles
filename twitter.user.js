@@ -70,3 +70,7 @@ addCSS('.twttr-dialog-footer { display:none !important; }')
 addCSS('.go-to-profile { display:none !important; }')
 addCSS('.modal-title { display:none !important; }')
 addCSS('.profile-header-inner.flex-module.clearfix { height:80px !important}')
+
+/* Lists page */
+addCSS('.ListCreationModule-title { display:none !important; }')
+addCSS('.ListCreationModule-description { display:none !important; }')
