@@ -27,5 +27,7 @@ addCSS('.gb_ga.gb_Ta.gb_r.gb_ma { display:none !important; }')
 addCSS('.aBS.J-J5-Ji { display:none !important; }')
 addCSS('.aki.pp { display:none !important; }')
 
+addCSS('.ajl.aib.aZ6 { margin-top:20px !important; }')
+
 /* Removed Footer */
 addCSS('.aeG { display:none !important; }')
