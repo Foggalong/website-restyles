@@ -31,4 +31,11 @@ addCSS('#your_repos { display:none !important; }')
 addCSS('.protip { display:none !important; }')
 
 /* Removes footer */
+addCSS('#footer { display:none !important; }')
 addCSS('.site-footer { display:none !important; }')
+
+/* Cleanup Profiles */
+addCSS('.right { display:none !important; }')
+addCSS('.vcard-stats { display:none !important; }')
+addCSS('.boxed-group-action.boxed-group-icon.tooltipped.tooltipped-nw.tooltipped-multiline { display:none !important }')
+addCSS('.contrib-footer.clearfix { display:none !important; }')
