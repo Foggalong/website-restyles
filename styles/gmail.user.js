@@ -25,9 +25,12 @@ function addCSS(css) {
 addCSS('.gb_3 { display:none !important; }')
 addCSS('.gb_ga.gb_Ta.gb_r.gb_ma { display:none !important; }')
 addCSS('.aBS.J-J5-Ji { display:none !important; }')
+addCSS('.aBS { display:none !import; }')
 addCSS('.aki.pp { display:none !important; }')
 
+/* Fixed Sidebar */
 addCSS('.ajl.aib.aZ6 { margin-top:20px !important; }')
 
 /* Removed Footer */
+addCSS('.nH { display:none !important; }')
 addCSS('.aeG { display:none !important; }')
