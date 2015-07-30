@@ -20,8 +20,17 @@ function addCSS(css) {
     head.appendChild(style);
 }
 
+/* Top Bar Crap */
+addCSS('.dropdown.srdrop {display:none !important; }')
+
 /* Removed beta symbol */
 addCSS('.beta-link { display:none !important; }')
+
+/* Sidebar */
+addCSS('.sidebox.create { display:none !important; }')
+
+/* Comments */
+addCSS('.link-save-button.save-button { display:none !important; }')
 
 /* Removes the footer */
 addCSS('.footer-parent { display:none !important; }')
