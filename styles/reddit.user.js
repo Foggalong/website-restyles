@@ -21,8 +21,8 @@ function addCSS(css) {
 }
 
 /* Removed beta symbol */
-addCSS('.a.beta-link { display:none !important; }')
+addCSS('.beta-link { display:none !important; }')
 
 /* Removes the footer */
-addCSS('.div.footer-parent { display:none !important; }')
-addCSS('.p.debuginfo { display:none !important; }')
+addCSS('.footer-parent { display:none !important; }')
+addCSS('.debuginfo { display:none !important; }')
