@@ -22,28 +22,29 @@
 
 
 /* Make the comments togglable */
-(function () {{
-    var comments = document.getElementById("watch-discussion");
-    var toggleLoc = document.getElementById("watch8-secondary-actions
-    var toggleDiv = document.createElement("div");
 
-    toggleDiv.style.textAlign = "center";
-    toggleDiv.innerHTML = "<button id='toggleBtn' class='yt-uix-button-default'> Show Comments </button>";
-    
-    comments.parentNode.insertBefore(toggleDiv, comments);
-    comments.style.display = "none";
-    
-    var toggleBtn = document.getElementById("toggleBtn");
-    toggleBtn.onclick = function() {
-        if (comments.style.display !== "none") {
-            comments.style.display = "none";
-            toggleBtn.innerHTML = "Show  Comments";
-        }
-        else {
-            comments.style.display = "";
-            toggleBtn.innerHTML = "Hide Comments";
-        }
-    }
+(function () {
+	var comments = document.getElementById("watch-discussion");
+	var toggleLoc = document.getElementById("watch8-secondary-actions");
+	var toggleDiv = document.createElement("div");
+
+	toggleDiv.style.textAlign = "center";
+	toggleDiv.innerHTML = "<button id='toggleBtn' class='yt-uix-button yt-uix-button-default'> Show Comments </button>";
+
+	comments.parentNode.insertBefore(toggleDiv, comments);
+	comments.style.display = "none";
+
+	var toggleBtn = document.getElementById("toggleBtn");
+	toggleBtn.onclick = function() {
+		if (comments.style.display !== "none") {
+			comments.style.display = "none";
+			toggleBtn.innerHTML = "Show  Comments";
+		}
+		else {
+			comments.style.display = "";
+			toggleBtn.innerHTML = "Hide Comments";
+		} 
+	}
 }) ();
                                       
 
