@@ -26,7 +26,7 @@ addCSS('.header-nav.left { display:none !important; }')
 /* Clean up sidebar */
 addCSS('.github-jobs-promotion { display:none !important; }')
 addCSS('#your_repos { display:none !important; }')
-addCSS('.clone-options { display:none !importany; }')
+addCSS('.clone-options { display:none !important; }')
 
 /* Remove ProTips */
 addCSS('.protip { display:none !important; }')
