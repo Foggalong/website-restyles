@@ -31,6 +31,7 @@ addCSS('.sidebox.create { display:none !important; }')
 
 /* Comments */
 addCSS('.link-save-button.save-button { display:none !important; }')
+addCSS('.comment-save-button.save-button { display:none !important; }')
 addCSS('.state-button.hide-button { display:none !important; }')
 
 /* Removes the footer */
