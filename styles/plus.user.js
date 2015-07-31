@@ -22,3 +22,9 @@ function addCSS(css) {
 
 /* Removes annoying posts */
 addCSS('.nja { display:none !important; }')
+
+/* Less Buttons */
+addCSS('.gb_Qc.gb_r.gb_5c.gb_Xc { display:none !important; }')
+addCSS('#gbwa { display:none !important; }')
+addCSS('.PQQENc.IYWXcc.uoGTZe { display:none !important; }')
+addCSS('.qxxOMd.Ouvvj { display:none !important; }')
