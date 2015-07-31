@@ -27,6 +27,7 @@ addCSS('.header-nav.left { display:none !important; }')
 addCSS('.github-jobs-promotion { display:none !important; }')
 addCSS('#your_repos { display:none !important; }')
 addCSS('.clone-options { display:none !important; }')
+addCSS('.btn.btn-sm.sidebar-button { margin-top:10px !important; }')
 
 /* Remove ProTips */
 addCSS('.protip { display:none !important; }')
