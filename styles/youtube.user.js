@@ -4,14 +4,17 @@
 // @description	  Makes YouTube a bit cleaner
 // @author        Foggalong
 // @homepage      http://fogg.me.uk
+// @include       http://www.youtube.com/watch*
+// @include       https://www.youtube.com/watch*
+// @include       http://youtube.com/watch*
+// @include       https://youtube.com/watch*
 // @include       http://www.youtube.com/*
 // @include       https://www.youtube.com/*
 // @include       http://youtube.com/*
 // @include       https://youtube.com/*
-// @run-at        document-start
-// @grant         none
+// @run-at        document-end
+// @grant	  none
 // ==/UserScript==
-
 
 /*
     This script also contains a user script by Lewis Aron Milne which
@@ -20,9 +23,7 @@
     script can be found at https://greasyfork.org/users/7439
 */
 
-
 /* Make the comments togglable */
-
 (function () {
 	var comments = document.getElementById("watch-discussion");
 	var toggleLoc = document.getElementById("watch8-secondary-actions");
@@ -46,7 +47,6 @@
 		} 
 	}
 }) ();
-                                      
 
 /* Allows for CSS editing */
 function addCSS(css) {
