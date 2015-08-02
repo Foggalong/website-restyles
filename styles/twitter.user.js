@@ -38,6 +38,7 @@ addCSS('.modal-btn.modal-close.js-close { display:none !important }')
 addCSS('.dashboard.dashboard-right { display:none !important; }');
 addCSS('.module.trends { display:none !important; }');
 addCSS('.module.roaming-module.wtf-module.js-wtf-module .has-content { display:none !important; }')
+addCSS('.module.roaming-module.wtf-module.js-wtf-module.has-content { display:none !important; }')
 addCSS('.Footer.module.roaming-module { display:none !important; }')
 addCSS('.geo-picker { display:none !important; }')
 
