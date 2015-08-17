@@ -75,6 +75,7 @@ addCSS('#watch7-subscription-container { display:none !important; }')
 addCSS('#watch8-secondary-actions { display:none !important; }')
 addCSS('.checkbox-on-off { display:none !important; }')
 addCSS('.autoplay-bar { display:none !important; }')
+addCSS('.video-list-item.related-list-item.show-video-time.related-list-item-compact-radio { display:none !important; }')
 
 /* Nuke Footer */
 addCSS('#footer-container { display:none !important; }')
