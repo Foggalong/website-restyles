@@ -65,6 +65,7 @@ addCSS('.metadata { display:none !important; }')
 addCSS('.translation-attribution { display:none !important; }')
 addCSS('.CardAttribution { display:none !important; }')
 addCSS('.media-preview-container { display:none !important; }')
+addCSS('.twitter-hashflag { display:none !important; }')
 
 /* Popups */
 addCSS('.twttr-dialog-footer { display:none !important; }')
