@@ -24,10 +24,10 @@ function addCSS(css) {
 addCSS('.header-nav.left { display:none !important; }')
 addCSS('.dropdown-divider { display:none !important; }')
 addCSS('.dropdown-header.header-nav-current-user.css-truncate { display:none !important; }')
+addCSS('.dropdown-caret { display:none !important; }')
 
 /* Clean up topbar */
 addCSS('.js-toggler-container.js-social-container.starring-container { display:none !important; }')
-// addCSS('.btn.btn-sm { display:none !important; }')
 
 /* Clean up sidebar */
 addCSS('.github-jobs-promotion { display:none !important; }')
