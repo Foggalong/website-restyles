@@ -25,6 +25,8 @@ addCSS('.header-nav.left { display:none !important; }')
 
 /* Clean up topbar */
 addCSS('.js-toggler-container.js-social-container.tarring-container { display:none !important; }')
+addCSS('.js-toggler-container.js-social-container.starring-container { display:none !important; }')
+}
 
 /* Clean up sidebar */
 addCSS('.github-jobs-promotion { display:none !important; }')
