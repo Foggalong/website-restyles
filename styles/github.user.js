@@ -27,6 +27,13 @@ addCSS('.dropdown-header.header-nav-current-user.css-truncate { display:none !im
 addCSS('.dropdown-caret { display:none !important; }')
 
 /* Clean up topbar */
+// Experimental Section
+// addCSS('.js-selected-navigation-item.reponav-item { visibility:collapse; }')
+// addCSS('.octicon.octicon-code { visibility:visible; }')
+// addCSS('.octicon.octicon-issue-opened { visibility:visible; }')
+// addCSS('.octicon.octicon-git-pull-request { visibility:visible; }')
+// addCSS('.octicon.octicon-book { visibility:visible; }')
+// addCSS('.octicon.octicon-gear { visibility:visible; }')
 addCSS('.js-toggler-container.js-social-container.starring-container { display:none !important; }')
 
 /* Clean up sidebar */
