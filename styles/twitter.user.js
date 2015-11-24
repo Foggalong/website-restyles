@@ -67,6 +67,10 @@ addCSS('.CardAttribution { display:none !important; }')
 addCSS('.media-preview-container { display:none !important; }')
 addCSS('.twitter-hashflag { display:none !important; }')
 
+/* Feed */
+addCSS('.]WtfLargeCarouselStreamItem.js-stream-item.stream-item.js-dedupe-wtf-sidebar { display:none !important; }')
+addCSS('.PromptbirdPrompt-streamItem.js-stream-item.js-prompt-layout-container { display:none !important; }')
+
 /* Popups */
 addCSS('.twttr-dialog-footer { display:none !important; }')
 addCSS('.go-to-profile { display:none !important; }')
