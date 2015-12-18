@@ -35,6 +35,11 @@ addCSS('.dropdown-caret { display:none !important; }')
 addCSS('.modal-btn.modal-close.js-close { display:none !important }')
 addCSS('.moments.js-moments-tab { display:none !important }')
 
+/* Top Menu */
+addCSS('.dropdown-divider { display:none !important }')
+addCSS('.user-dropdown-analytics { display:none !important }')
+addCSS('.presentation { display:none !important }')
+
 /* Home page */
 addCSS('.dashboard.dashboard-right { display:none !important; }');
 addCSS('.module.trends { display:none !important; }');
