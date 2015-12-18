@@ -86,3 +86,10 @@ addCSS('.profile-header-inner.flex-module.clearfix { height:80px !important}')
 /* Lists page */
 addCSS('.ListCreationModule-title { display:none !important; }')
 addCSS('.ListCreationModule-description { display:none !important; }')
+
+/* Search Page */
+addCSS('.AdaptiveSearchTitle.u-bgUserColor { display:none !important; }')
+addCSS('.WhoToFollow.WhoToFollow--blankBackground.is-visible { display:none !important; }')
+
+/* Settings Page */
+addCSS('#settings_nav { display:block !important; }')
