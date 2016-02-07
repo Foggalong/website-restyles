@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name          Minimal $SITENAME
+// @name          Minimal Wolfram Alpha
 // @namespace     http://userstyles.org
-// @description	  Makes $SITENAME a bit cleaner
+// @description	  Makes Wolfram Alpha a bit cleaner
 // @author        Foggalong
 // @homepage      http://fogg.me.uk
 // @include       https://www.wolframalpha.com/input/*
