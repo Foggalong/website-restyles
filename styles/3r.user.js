@@ -37,11 +37,11 @@ addCSS('div.day_icons { display:none !important; }');
 
 /* Move shift labels to sidebar */
 addCSS('div.rota_item_time_name { display:none !important; }');
-addCSS('tr.week_view_rota_shift_period:nth-child(2) > th:nth-child(1):before { content: "IM"; }');
-addCSS('tr.week_view_rota_shift_period:nth-child(3) > th:nth-child(1):before { content: "Phone"; }');
-addCSS('tr.week_view_rota_shift_period:nth-child(4) > th:nth-child(1):before { content: "Supo"; }');
-addCSS('tr.week_view_rota_shift_period:nth-child(5) > th:nth-child(1):before { content: "Callout"; }');
-addCSS('tr.week_view_rota_shift_period:nth-child(6) > th:nth-child(1):before { content: "Mail"; }');
+addCSS('tr.week_view_rota_shift_period:nth-child(2) > th:nth-child(1):before { content: "IM & Phone"; }');
+// addCSS('tr.week_view_rota_shift_period:nth-child(3) > th:nth-child(1):before { content: "Phone"; }');
+addCSS('tr.week_view_rota_shift_period:nth-child(3) > th:nth-child(1):before { content: "Supo"; }');
+addCSS('tr.week_view_rota_shift_period:nth-child(4) > th:nth-child(1):before { content: "Callout"; }');
+addCSS('tr.week_view_rota_shift_period:nth-child(5) > th:nth-child(1):before { content: "Mail"; }');
 
 
 /* Kill footer */
