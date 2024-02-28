@@ -3,46 +3,55 @@
 // @namespace     http://userstyles.org
 // @description	  Makes 3r a bit cleaner
 // @author        Foggalong
-// @homepage      http://fogg.me.uk
 // @include       https://www.3r.org.uk/*
 // @run-at        document-start
 // @grant         none
 // ==/UserScript==
 
-/* Allows for CSS editing */
-function addCSS(css) {
-    var head, style;
-    head = document.getElementsByTagName('head')[0];
-    if (!head) { return; }
-    style = document.createElement('style');
-    style.type = 'text/css';
-    style.innerHTML = css;
-    head.appendChild(style);
-}
 
-/* Cleans up navbar */
-addCSS('div.navbar-header { display:none !important; }');
-addCSS('ul.nav > li { text-indent: -9999px; width: 45px; }');
-addCSS('div.toplogin_row { text-indent: -9999px; width: 50px; }');
+// styles to inject as a multiline Javascript string
+var styles = `
+	/* NAVIGATION BAR */
 
-/* Timetable Frame */
-addCSS('span.visible-md-inline:nth-child(2) { display:none !important; }');
-addCSS('span.visible-md-inline:nth-child(4) { display:none !important; }');
-addCSS('div#rota_key { border:none !important; }');
-addCSS('span.ui-button-text:nth-child(1) { display:none !important; }');
-addCSS('#rotas_shown { display:none !important; }')
-addCSS('#rota_key > b:nth-child(1) { display:none !important; }');
-addCSS('tr.week_view_events { display:none !important; }');
-addCSS('div.day_icons { display:none !important; }');
+	/* remove the logo from the navbar */
+ 	div.navbar-header {
+		display:none !important;
+   }
 
-/* Move shift labels to sidebar */
-addCSS('div.rota_item_time_name { display:none !important; }');
-addCSS('tr.week_view_rota_shift_period:nth-child(2) > th:nth-child(1):before { content: "IM & Phone"; }');
-// addCSS('tr.week_view_rota_shift_period:nth-child(3) > th:nth-child(1):before { content: "Phone"; }');
-addCSS('tr.week_view_rota_shift_period:nth-child(3) > th:nth-child(1):before { content: "Supo"; }');
-addCSS('tr.week_view_rota_shift_period:nth-child(4) > th:nth-child(1):before { content: "Callout"; }');
-addCSS('tr.week_view_rota_shift_period:nth-child(5) > th:nth-child(1):before { content: "Mail"; }');
+  /* remove text labels from category tabs */
+ 	ul.nav > li {
+  	text-indent: -9999px; width: 45px;
+  }
+  
+  /* remove useless menu buttons */
+  #contextual_help_link, #simplify_interface, #general-search-text, #logout {
+  	display: none !important;
+  }
 
 
-/* Kill footer */
-addCSS('footer { display:none !important; }');
+  /* ROTA FRAME */
+  /* remove buttons for selecting different rotas */
+  #rotas_shown_container, #rota_key {
+  	display:none !important;
+  }
+  
+  /* remove button to add new shifts */
+  div.day_icons {
+  	display:none !important;
+  }
+  
+  /* remove holidays and birthdays */
+  tr.week_view_events {
+  	display:none !important;
+  }
+
+
+  /* WEBSITE FOOTER */
+  footer {
+  	display:none !important;
+  }
+`
+
+var styleSheet = document.createElement("style")
+styleSheet.innerText = styles
+document.head.appendChild(styleSheet)
