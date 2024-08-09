@@ -3,7 +3,6 @@
 // @namespace     http://userstyles.org
 // @description	  Makes YouTube a bit cleaner
 // @author        Foggalong
-// @homepage      http://fogg.me.uk
 // @include       http://www.youtube.com/watch*
 // @include       https://www.youtube.com/watch*
 // @include       http://youtube.com/watch*
@@ -16,37 +15,6 @@
 // @grant	  none
 // ==/UserScript==
 
-/*
-    This script also contains a user script by Lewis Aron Milne which
-    was released into the public domain. Their script makes the YouTube
-    comments togglable so that I don't have to see their crapness. The
-    script can be found at https://greasyfork.org/users/7439
-*/
-
-/* Make the comments togglable */
-(function () {
-	var comments = document.getElementById("watch-discussion");
-	var toggleLoc = document.getElementById("watch8-secondary-actions");
-	var toggleDiv = document.createElement("div");
-
-	toggleDiv.style.textAlign = "center";
-	toggleDiv.innerHTML = "<button id='toggleBtn' class='yt-uix-button yt-uix-button-default'> Show Comments </button>";
-
-	comments.parentNode.insertBefore(toggleDiv, comments);
-	comments.style.display = "none";
-
-	var toggleBtn = document.getElementById("toggleBtn");
-	toggleBtn.onclick = function() {
-		if (comments.style.display !== "none") {
-			comments.style.display = "none";
-			toggleBtn.innerHTML = "Show  Comments";
-		}
-		else {
-			comments.style.display = "";
-			toggleBtn.innerHTML = "Hide Comments";
-		} 
-	}
-}) ();
 
 /* Allows for CSS editing */
 function addCSS(css) {
