@@ -16,35 +16,32 @@
 // ==/UserScript==
 
 
-/* Allows for CSS editing */
-function addCSS(css) {
-    var head, style;
-    head = document.getElementsByTagName('head')[0];
-    if (!head) { return; }
-    style = document.createElement('style');
-    style.type = 'text/css';
-    style.innerHTML = css;
-    head.appendChild(style);
-}
+// styles to inject as a multiline Javascript string
+var styles = `
+	/* Remove sidebar */
+	#appbar-guide-menu { display:none !important; }
+	#appbar-guide-button-container { display:none !important; }
 
-/* Remove sidebar */
-addCSS('#appbar-guide-menu { display:none !important; }')
-addCSS('#appbar-guide-button-container { display:none !important; }')
+	/* Fewer buttons */
+	#logo-container { display:none !important; }
+	#upload-btn { display:none !important; }
+	.notifications-container { display:none !important; }
+	#yt-masthead-account-picker { display:none !important; }
+	#masthead-appbar-container { display:none !important; }
 
-/* Fewer buttons */
-addCSS('#logo-container { display:none !important; }')
-addCSS('#upload-btn { display:none !important; }')
-addCSS('.notifications-container { display:none !important; }')
-addCSS('#yt-masthead-account-picker { display:none !important; }')
-addCSS('#masthead-appbar-container { display:none !important; }')
+	/* Cleanup Video Page */
+	#watch7-subscription-container { display:none !important; }
+	#watch8-secondary-actions { display:none !important; }
+	.checkbox-on-off { display:none !important; }
+	.autoplay-bar { display:none !important; }
+	.video-list-item.related-list-item.show-video-time.related-list-item-compact-radio { display:none !important; }
+	.watch-sidebar-separation-line { display:none !important; }
 
-/* Cleanup Video Page */
-addCSS('#watch7-subscription-container { display:none !important; }')
-addCSS('#watch8-secondary-actions { display:none !important; }')
-addCSS('.checkbox-on-off { display:none !important; }')
-addCSS('.autoplay-bar { display:none !important; }')
-addCSS('.video-list-item.related-list-item.show-video-time.related-list-item-compact-radio { display:none !important; }')
-addCSS('.watch-sidebar-separation-line { display:none !important; }')
+	/* Nuke Footer */
+	#footer-container { display:none !important; }
+`
 
-/* Nuke Footer */
-addCSS('#footer-container { display:none !important; }')
+
+var styleSheet = document.createElement("style")
+styleSheet.innerText = styles
+document.head.appendChild(styleSheet)
